@@ -48,6 +48,7 @@ public class PathFinder {
 
             System.out.println("Distance to target from source: " + shortestPath.size() + ".");    // Print the distance
             System.out.println(getPath());                                                             // Print the final track path to be followed
+            System.out.println("Shortest path has been found :).\n");
 
             // An unsuccessful call means there's no path available, so avoid everything else
         } else {
@@ -151,7 +152,7 @@ public class PathFinder {
     // Method that returns the string with the final path to follow
     public String getPath(){
         finalPath = finalPath.substring(0, finalPath.length() - 2);
-        finalPath = finalPath.concat(".\n");
+        finalPath = finalPath.concat(".");
 
         return finalPath;
     }
